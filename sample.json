@@ -1,0 +1,68 @@
+{
+	"swagger": "2.0",
+	"info": {
+		"description": "Test For Demo",
+		"version": "1.0.0",
+		"title": "PetStore",
+		"contact": {
+			"name": "PetStore",
+			"url": "",
+			"email": "petstore@gmail.com"
+		},
+		"license": {
+			"name": "PetStore",
+			"url": "PetStore"
+		}
+	},
+	"host": "petstore.swagger.wordnik.com:443",
+	"basePath": "/api",
+	"tags": [{
+		"name": "Pet",
+		"description": "Operations about pet"
+	}],
+	"schemes": [
+		"HTTP"
+	],
+	"paths": {
+		"/pet{petid}": {
+			"GET": {
+				"tags": ["Pet"],
+				"summary": "Find pet by ID",
+				"description": "Find pet by ID",
+				"operationId": "getPet",
+				"consumes": [],
+				"produces": ["application/json"],
+				"parameters": [{
+					"in": "path",
+					"name": "petId",
+					"required": "true",
+					"schema": {
+						"$ref": "#/definitions/Pet"
+					}
+				}],
+				"responses": {
+					"200": {
+						"description": "Success"
+					},
+					"400": {
+						"description": "Error"
+					}
+				}
+			}
+		}
+	},
+	"definitions": {
+		"Pet": {
+			"properties": {
+				"id": {
+					"type": "String",
+					"description": "pet id"
+				},
+				"name": {
+					"type": "String",
+					"description": "name"
+				}
+			}
+		}
+	}
+}
