@@ -22,5 +22,14 @@
     "type": "",
     "url": ""
   },
-  "description": "sampleTestAPI8"
+  "description": "sampleTestAPI8",
+  "bundleDependencies": [
+    "compression",
+    "cors",
+    "loopback",
+    "loopback-boot",
+    "loopback-component-explorer",
+    "loopback-datasource-juggler",
+    "serve-favicon"
+  ]
 }
