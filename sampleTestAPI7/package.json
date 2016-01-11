@@ -22,5 +22,14 @@
     "type": "",
     "url": ""
   },
-  "description": "sampleTestAPI7"
+  "description": "sampleTestAPI7",
+  "bundleDependencies": [
+    "compression",
+    "cors",
+    "loopback",
+    "loopback-boot",
+    "loopback-component-explorer",
+    "loopback-datasource-juggler",
+    "serve-favicon"
+  ]
 }
