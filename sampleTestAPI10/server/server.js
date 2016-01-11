@@ -16,6 +16,14 @@ app.start = function() {
   });
 };
 
+app.use(function(req, res, next) {
+console.log('APIConnect:Error',app.get('url'),400,"Bad-Request");
+//console.log('APIConnect:Error',app.get('url'),407,"Proxy-Authentication-Required");
+//console.log('APIConnect:Error',app.get('url'),500,"Internal-Server-Error");
+//  res.send('hello from `get` route');
+});
+
+
 // Bootstrap the application, configure models, datasources and middleware.
 // Sub-apps like REST API are mounted via boot scripts.
 boot(app, __dirname, function(err) {
