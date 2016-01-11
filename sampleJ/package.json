@@ -22,14 +22,5 @@
     "type": "",
     "url": ""
   },
-  "description": "sampleJ",
-  "bundleDependencies": [
-    "compression",
-    "cors",
-    "loopback",
-    "loopback-boot",
-    "loopback-component-explorer",
-    "loopback-datasource-juggler",
-    "serve-favicon"
-  ]
+  "description": "sampleJ"
 }
