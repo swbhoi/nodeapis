@@ -1,0 +1,23 @@
+{
+  "name": "Balance",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "currency": {
+      "type": "string",
+      "description": "currency"
+    },
+    "amount": {
+      "type": "number",
+      "description": "amount",
+      "format": "float"
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}
