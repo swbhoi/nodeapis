@@ -7,6 +7,7 @@
     "pretest": "jshint ."
   },
   "dependencies": {
+ "chai":"3.5.0","mocha":"3.2.0",
     "compression": "^1.0.3",
     "cors": "^2.5.2",
     "loopback": "^2.22.0",
@@ -22,5 +23,15 @@
     "type": "",
     "url": ""
   },
-  "description": "MyAPIs2"
+  "description": "MyAPIs2",
+  "bundleDependencies": [
+ "chai","mocha",
+    "compression",
+    "cors",
+    "loopback",
+    "loopback-boot",
+    "loopback-component-explorer",
+    "loopback-datasource-juggler",
+    "serve-favicon"
+  ]
 }
