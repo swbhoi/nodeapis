@@ -1,0 +1,26 @@
+{
+  "name": "Owners",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "provider": {
+      "type": "string",
+      "description": "provider"
+    },
+    "display_name": {
+      "type": "string",
+      "description": "display name"
+    },
+    "id": {
+      "type": "string",
+      "description": "id"
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}
