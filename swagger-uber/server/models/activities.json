@@ -1,0 +1,34 @@
+{
+  "name": "Activities",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "offset": {
+      "type": "number",
+      "description": "Position in pagination.",
+      "format": "int32"
+    },
+    "limit": {
+      "type": "number",
+      "description": "Number of items to retrieve (100 max).",
+      "format": "int32"
+    },
+    "count": {
+      "type": "number",
+      "description": "Total number of items available.",
+      "format": "int32"
+    },
+    "history": {
+      "type": [
+        "Activity"
+      ]
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}
