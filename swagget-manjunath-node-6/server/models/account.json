@@ -1,0 +1,52 @@
+{
+  "name": "Account",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "IBAN": {
+      "type": "string",
+      "description": "IBAN"
+    },
+    "acc_number": {
+      "type": "number",
+      "description": "Account number",
+      "format": "int64"
+    },
+    "balance": {
+      "type": "balance"
+    },
+    "bank_id": {
+      "type": "string",
+      "description": "bank_id"
+    },
+    "id": {
+      "type": "string",
+      "description": "ID"
+    },
+    "label": {
+      "type": "string",
+      "description": "label"
+    },
+    "owners": {
+      "type": [
+        "Owners"
+      ],
+      "description": "owners"
+    },
+    "swift_bic": {
+      "type": "string",
+      "description": "swift_bic"
+    },
+    "type": {
+      "type": "string",
+      "description": "type"
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}
