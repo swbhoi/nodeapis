@@ -1,0 +1,29 @@
+{
+  "name": "Account",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "IBAN": {
+      "type": "string",
+      "description": "IBAN Number",
+      "format": "string"
+    },
+    "acc_number": {
+      "type": "number",
+      "description": "account number",
+      "format": "int64"
+    },
+    "bank_id": {
+      "type": "string",
+      "description": "Bank ID",
+      "format": "string"
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}
